@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">To Do Apps</string>
+    <string name="labelJudul">Judul Task</string>
+    <string name="labelIsi">Isi Task</string>
+    <string name="input_invalid">Data tidak boleh kosong!</string>
+    <string name="status">Status</string>
+    <string name="bagikan_template">Judul Task: %1$s\nIsi Task: %2$s</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="copyright">Halo, nama saya Martin Rahman Hakim \nSaya sedang membuat Aplikasi To Do Apps</string>
+    <string name="kembali">Kembali</string>
+    <string name="prioritas">Prioritas</string>
+    <string name="non_prioritas">Non Prioritas</string>
+    <string name="tambah_task">Tambah Task</string>
+    <string name="gambar_welcome">Ini Gambar Welcome</string>
+    <string name="kalimat_welcome">Selamat datang! \nSilakan untuk membuat To Do List anda dengan menekan tombol Floating Icon Button dipojok kanan bawah!</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="hapusTugas">Hapus Tugas</string>
+    <string name="gambar_fotoformal">Ini Foto Saya</string>
+
+</resources>
