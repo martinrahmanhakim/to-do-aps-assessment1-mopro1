@@ -1,5 +1,6 @@
 package com.d3if3058.assessment1.data
 
+
 data class Task(
     val id: Int,
     val judul: String,

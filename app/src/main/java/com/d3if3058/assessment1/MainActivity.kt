@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.d3if3058.assessment1.screen.SetUpNavGraph
+import com.d3if3058.assessment1.navigation.SetUpNavGraph
 import com.d3if3058.assessment1.ui.theme.Assessment1Theme
 
 class MainActivity : ComponentActivity() {

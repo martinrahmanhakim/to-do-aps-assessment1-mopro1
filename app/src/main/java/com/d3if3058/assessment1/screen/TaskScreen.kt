@@ -148,13 +148,13 @@ fun ScreenContent(modifier: Modifier) {
                 modifier = Modifier.fillMaxWidth()
             )
             Spacer(modifier = Modifier.height(8.dp))
-            Row (
+            Column(
                 modifier = Modifier
                     .padding(top = 6.dp)
                     .border(1.dp, Color.Gray, RoundedCornerShape(4.dp))
-            ){
+            ) {
                 radioOptions.forEach{
-                    text ->
+                        text ->
                     PriorityOption(
                         label = text,
                         isSelected = priority == text,
@@ -164,7 +164,7 @@ fun ScreenContent(modifier: Modifier) {
                                 onClick = { priority = text },
                                 role = Role.RadioButton
                             )
-                            .padding(30.dp)
+                            .padding(16.dp)
                     )
                 }
             }
@@ -205,17 +205,26 @@ fun ScreenContent(modifier: Modifier) {
 }
 
 @Composable
-fun PriorityOption(label: String, isSelected: Boolean, modifier: Modifier){
-    Row (
-        modifier = Modifier,
+fun PriorityOption(label: String, isSelected: Boolean, modifier: Modifier) {
+    Row(
+        modifier = modifier.fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically
-    ){
-        RadioButton(selected = isSelected, onClick = null)
-        Text(
-            text = label,
-            style = MaterialTheme.typography.bodyLarge,
-            modifier = modifier.padding(start = 8.dp)
+    ) {
+        if (isSelected) {
+            RadioButton(selected = true, onClick = null)
+            Text(
+                text = label,
+                style = MaterialTheme.typography.bodyLarge,
+                modifier = Modifier.padding(start = 8.dp)
             )
+        } else {
+            RadioButton(selected = false, onClick = null)
+            Text(
+                text = label,
+                style = MaterialTheme.typography.bodyLarge,
+                modifier = Modifier.padding(start = 8.dp)
+            )
+        }
     }
 }
 
@@ -226,7 +235,7 @@ fun TaskItem(task: Task, onDelete: () -> Unit) {
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
         modifier = Modifier.padding(4.dp),
 
-    ) {
+        ) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.padding(horizontal = 16.dp)
